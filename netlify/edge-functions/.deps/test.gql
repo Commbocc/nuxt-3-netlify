@@ -1,0 +1,8 @@
+query MyQuery {
+  all_page {
+    items {
+      title
+      url
+    }
+  }
+}
