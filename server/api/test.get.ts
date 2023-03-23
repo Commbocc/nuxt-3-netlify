@@ -1,4 +1,4 @@
-// import axios from 'axios'
+import axios from 'axios'
 
 export default defineEventHandler(async (event) => {
   //   setHeader(event, 'Content-Type', 'text/plain')
@@ -8,7 +8,7 @@ export default defineEventHandler(async (event) => {
   // const url = `//${host}/test.Query.gql`
   // const { data: query } = await axios.get(url)
 
-  // const query = await event.$fetch(`/test.Query.gql`)
+  const query = await event.$fetch(`/ical.ics`)
 
-  return { test: 'hi' }
+  return { query }
 })
