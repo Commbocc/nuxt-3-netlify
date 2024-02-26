@@ -1,0 +1,10 @@
+#import "./SysAsset.Fragment.gql"
+
+query AllAssets($limit: Int = 100, $skip: Int = 0) {
+  all_assets(limit: $limit, skip: $skip) {
+    total
+    items {
+      ...SysAssetFragment
+    }
+  }
+}

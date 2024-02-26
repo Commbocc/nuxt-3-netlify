@@ -1,0 +1,16 @@
+fragment SysAssetFragment on SysAsset {
+  title
+  url
+  description
+  content_type
+  file_size
+  filename
+  metadata
+  system {
+    created_at
+    tags
+    uid
+    updated_at
+    version
+  }
+}

@@ -1,0 +1,7 @@
+#import "./SysAsset.Fragment.gql"
+
+query AssetByUid($uid: String!) {
+  assets(uid: $uid) {
+    ...SysAssetFragment
+  }
+}
